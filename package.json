@@ -1,0 +1,36 @@
+{
+  "name": "auto_nodejs_1",
+  "version": "1.0.0",
+  "description": "Projet autoformation node.js + autres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nieleim/auto_nodejs_1.git"
+  },
+  "keywords": [
+    "Node.JS",
+    "Jest",
+    "MongoDB",
+    "Winston",
+    "Autoformation",
+    "Swagger",
+    "javascript",
+    "express",
+    "eslint",
+    "heroku",
+    "github"
+  ],
+  "author": "Emilien Wacrenier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nieleim/auto_nodejs_1/issues"
+  },
+  "homepage": "https://github.com/Nieleim/auto_nodejs_1#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
