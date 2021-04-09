@@ -2,8 +2,8 @@
 const express = require('express');
 
 // src files import
-const router = require('./routage/route.js');
-const router2 = require('./routage/route2');
+const router1 = require('./routage/route1.js');
+const router2 = require('./routage/route2.js');
 const swaggerOptions = require('./utils/swaggerConfig');
 
 // express app creation
@@ -18,7 +18,7 @@ app.listen(port, () => {
 });
 
 // setting up routing
-app.use('/route', router);
+app.use('/route1', router1);
 app.use('/route2', router2);
 
 module.exports = app;

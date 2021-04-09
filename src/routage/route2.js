@@ -26,7 +26,7 @@ const router = express.Router();
  * @returns {Error} 500 - Internal Server Error
  */
 router.get('/r2get', (req, res) => {
-    res.send('this is /route2/');
+    res.send('this is /r2get');
 });
 
 /**
