@@ -1,10 +1,10 @@
 {
-  "name": "auto_nodejs_1",
+  "name": "nodejs_cheat_sheet",
   "version": "1.0.0",
   "description": "Projet autoformation node.js + autres",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,6 +35,10 @@
     "eslint-config-google": "^0.14.0"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-swagger-generator": "^1.1.17",
+    "nodemon": "^2.0.7",
+    "swagger-jsdoc": "^7.0.0-rc.6",
+    "swagger-ui-express": "^4.1.6"
   }
 }
