@@ -1,6 +1,7 @@
 const express = require('express');
 
 const router = express.Router();
+const logger = require('../utils/winstonConfig');
 
 /**
  * @typedef R1M1
@@ -18,6 +19,7 @@ const router = express.Router();
  */
 router.get('/r1get', (req, res) => {
     res.send('route1/r1get');
+    logger.info('request sent to route1/r1get');
 });
 
 /**
