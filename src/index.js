@@ -5,6 +5,7 @@ const express = require('express');
 const router1 = require('./routage/route1.js');
 const router2 = require('./routage/route2.js');
 const swaggerOptions = require('./utils/swaggerConfig');
+const logger = require('./utils/winstonConfig');
 
 // express app creation
 const app = express();
@@ -14,7 +15,7 @@ const expressSwagger = require('express-swagger-generator')(app);
 expressSwagger(swaggerOptions);
 
 app.listen(port, () => {
-    console.log(`App running on http://localhost:${port}`);
+    logger.info(`App running on http://localhost:${port}`);
 });
 
 // setting up routing
