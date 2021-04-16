@@ -6,11 +6,13 @@ const router1 = require('./routage/route1.js');
 const router2 = require('./routage/route2.js');
 const swaggerOptions = require('./utils/swaggerConfig');
 const logger = require('./utils/winstonConfig');
+const db = require('./db/setupDb');
 
 // express app creation
 const app = express();
 const port = process.env.PORT || 3000;
 
+// setting up swagger
 const expressSwagger = require('express-swagger-generator')(app);
 expressSwagger(swaggerOptions);
 
